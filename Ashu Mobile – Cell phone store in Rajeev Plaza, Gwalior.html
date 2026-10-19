@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ashu Mobile – Cell phone store in Rajeev Plaza, Gwalior</title>
+<meta name="description" content="Ashu Mobile, Shop 26, Rajeev Plaza, Jayendraganj, Shinde Ki Chhawani, Gwalior. Call 093038 42111. Closes at 9 PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;--ink:#16181D;--muted:#5C616E;--card:#F4F5F7;--line:#E2E4E9;
+  --accent:#E3172F;--on-accent:#FFFFFF;--sun:#E3172F;--on-sun:#FFFFFF;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#101012;--ink:#F5F5F7;--muted:#A3A6B0;--card:#1B1C20;--line:#2E3036;--accent:#E3172F;--on-accent:#FFFFFF;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#101012;--ink:#F5F5F7;--muted:#A3A6B0;--card:#1B1C20;--line:#2E3036;--accent:#E3172F;--on-accent:#FFFFFF;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:800 1.25rem var(--display);text-decoration:none;letter-spacing:-.01em}
+.brand svg{width:26px;height:26px}
+nav{display:flex;align-items:center;gap:22px}
+nav a.l{text-decoration:none;font-weight:600;color:var(--muted)}
+nav a.l:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font:600 1rem var(--body);text-decoration:none;border:2px solid var(--accent);background:var(--accent);color:var(--on-accent);cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.sm{min-height:42px;padding:0 18px}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:24px;padding:48px 0 64px;min-height:calc(100svh - 64px)}
+h1{font:800 clamp(2.5rem,6.2vw,5rem)/.98 var(--display);letter-spacing:-.035em;margin:0 0 20px;max-width:12ch}
+.lead{max-width:46ch;color:var(--muted);font-size:1.15rem;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0;padding:0;list-style:none;color:var(--muted);font-weight:600;font-size:.95rem}
+.facts li::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--sun);margin-right:8px}
+.stage{position:relative;height:min(72vh,640px);min-height:420px}
+.stage::before{content:"";position:absolute;inset:8% 6%;border-radius:50%;background:var(--line);opacity:.6}
+#gl{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y}
+#gl:active{cursor:grabbing}
+.fallback{display:none;position:absolute;inset:0;place-items:center}
+.fallback div{width:200px;height:400px;border-radius:36px;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font:800 1.6rem var(--display);transform:rotate(-6deg)}
+.stage.nogl .fallback{display:grid}.stage.nogl #gl{display:none}
+.picker{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;align-items:center;gap:10px;font-weight:600;font-size:.9rem}
+.picker span{background:var(--bg);padding:6px 12px;border-radius:999px}
+.sw{width:34px;height:34px;border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 0 2px var(--line);cursor:pointer;padding:0}
+.sw[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ink)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font:800 clamp(1.9rem,4vw,3rem)/1.05 var(--display);letter-spacing:-.03em;margin:0 0 36px;max-width:18ch}
+.shop{display:grid;gap:0}
+.row{display:grid;grid-template-columns:minmax(150px,.6fr) 1.4fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.row:first-child{border-top:1px solid var(--line)}
+.row h3{font:800 clamp(1.6rem,3.2vw,2.4rem)/1 var(--display);letter-spacing:-.03em;margin:0}
+.row p{margin:0;color:var(--muted);max-width:50ch}
+.visit{display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px}
+.panel h3{font:800 1.5rem var(--display);margin:0 0 12px;letter-spacing:-.02em}
+address{font-style:normal;margin:0 0 20px;font-size:1.15rem}
+.phone{display:block;font:800 clamp(1.8rem,4vw,2.6rem) var(--display);letter-spacing:-.02em;text-decoration:none;margin:4px 0 8px}
+.panel.sun{background:var(--sun);color:var(--on-sun);border-color:var(--sun)}
+.panel.sun .btn{background:#fff;border-color:#fff;color:#11183A}
+.btn.rev{margin-top:8px}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:32px;min-height:0}
+  .stage{height:min(100vw,520px);min-height:380px}
+  .visit,.row{grid-template-columns:1fr}
+  .row{gap:8px}
+  nav a.l{display:none}
+}
+@media (max-width:420px){.btn{width:100%}.cta{flex-direction:column}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ashu Mobile home">
+      <svg viewBox="0 0 26 26" aria-hidden="true"><rect x="5" y="1" width="16" height="24" rx="5" fill="var(--accent)"/><circle cx="13" cy="19.5" r="2.2" fill="#fff"/></svg>
+      Ashu Mobile
+    </a>
+    <nav aria-label="Main">
+      <a class="l" href="#shop">In the shop</a>
+      <a class="l" href="#visit">Visit</a>
+      <a class="l" href="#reviews">Reviews</a>
+      <a class="btn sm" href="tel:+919303842111">Call now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <h1>Hold your next phone before you buy it.</h1>
+      <p class="lead">Ashu Mobile is a cell phone store in Rajeev Plaza, Jayendraganj, Gwalior. Spin the phone, pick a colour, then come in and see the real ones.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+919303842111">Call 093038 42111</a>
+        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=Ashu+Mobile+Rajeev+Plaza+Gwalior" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <ul class="facts">
+        <li>Shop No. 26, Rajeev Plaza</li>
+        <li>Closes at 9:00 PM</li>
+      </ul>
+    </div>
+    <div class="stage" id="stage">
+      <canvas id="gl" aria-label="Interactive 3D phone. Drag to rotate." role="img"></canvas>
+      <div class="fallback"><div>Ashu Mobile</div></div>
+      <div class="picker" id="picker" role="group" aria-label="Phone colour">
+        <span>Colour</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="shop">
+    <div class="wrap">
+      <h2>What to ask us about</h2>
+      <div class="shop">
+        <div class="row"><h3>Phones</h3><p>Call ahead to ask which models are in stock today, or come in and compare them side by side.</p></div>
+        <div class="row"><h3>Accessories</h3><p>Bring your phone model and ask what fits: cases, chargers, cables and more.</p></div>
+        <div class="row"><h3>Questions</h3><p>Not sure what to buy? Talk it through in person before you decide.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap visit">
+      <div class="panel">
+        <h3>Find the shop</h3>
+        <address>Shop No. 26, Ashu Mobile, Rajeev Plaza,<br>Jayendraganj, Shinde Ki Chhawani,<br>Gwalior, Madhya Pradesh 474009</address>
+        <p style="margin:0 0 20px;color:var(--muted)">Open today, closes at 9:00 PM.</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Ashu+Mobile+Rajeev+Plaza+Gwalior" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+      <div class="panel">
+        <h3>Prefer to call?</h3>
+        <a class="phone" href="tel:+919303842111">093038 42111</a>
+        <p style="margin:0;color:var(--muted)">Ask about stock and prices before you travel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="panel sun">
+        <h3>Been to Ashu Mobile?</h3>
+        <p style="margin:0 0 12px;max-width:52ch">The shop has 1 review on Google so far. Your review helps the next person find us.</p>
+        <a class="btn rev" href="https://www.google.com/search?q=Ashu+Mobile+Rajeev+Plaza+Gwalior+reviews" target="_blank" rel="noopener">Write a Google review</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Ashu Mobile, Gwalior</span>
+    <span>Rajeev Plaza, Jayendraganj · 093038 42111</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var stage=document.getElementById('stage'),cv=document.getElementById('gl');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var swatches=[['Pearl',0xF1F2F4],['Red',0xE3172F],['Graphite',0x3A3D45],['Silver',0xB9BDC6]];
+  var renderer;
+  try{
+    if(!window.THREE) throw new Error('no three');
+    renderer=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+  }catch(e){stage.classList.add('nogl');return}
+
+  var scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(40,1,.1,50);
+  scene.add(new THREE.HemisphereLight(0xffffff,0xb8bcc6,.9));
+  var key=new THREE.DirectionalLight(0xffffff,1.1);key.position.set(3,4,5);scene.add(key);
+  var rim=new THREE.PointLight(0xff3b4e,.8,20);rim.position.set(-4,-1,-3);scene.add(rim);
+
+  function rr(w,h,r){var s=new THREE.Shape(),x=-w/2,y=-h/2,P=Math.PI;
+    s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.absarc(x+w-r,y+r,r,-P/2,0,false);
+    s.lineTo(x+w,y+h-r);s.absarc(x+w-r,y+h-r,r,0,P/2,false);
+    s.lineTo(x+r,y+h);s.absarc(x+r,y+h-r,r,P/2,P,false);
+    s.lineTo(x,y+r);s.absarc(x+r,y+r,r,P,P*1.5,false);return s}
+
+  var phone=new THREE.Group();scene.add(phone);
+  var bodyMat=new THREE.MeshStandardMaterial({color:swatches[0][1],metalness:.2,roughness:.35});
+  var bg=new THREE.ExtrudeGeometry(rr(1.6,3.3,.24),{depth:.14,bevelEnabled:true,bevelThickness:.03,bevelSize:.03,bevelSegments:4,curveSegments:16});
+  bg.translate(0,0,-.07);
+  phone.add(new THREE.Mesh(bg,bodyMat));
+
+  // Screen
+  var sc=document.createElement('canvas');sc.width=600;sc.height=1280;
+  var tex=new THREE.CanvasTexture(sc);
+  function drawScreen(){
+    var c=sc.getContext('2d'),g=c.createLinearGradient(0,0,0,1280);
+    g.addColorStop(0,'#2A2C33');g.addColorStop(1,'#0C0C0E');
+    c.fillStyle=g;c.fillRect(0,0,600,1280);
+    c.fillStyle='#E3172F';c.beginPath();c.arc(430,360,190,0,7);c.fill();
+    c.fillStyle='#000';c.beginPath();c.arc(300,60,22,0,7);c.fill();
+    c.fillStyle='#fff';c.textAlign='left';
+    c.font='800 130px "Bricolage Grotesque",Trebuchet MS,sans-serif';
+    c.fillText('Ashu',54,740);c.fillText('Mobile',54,870);
+    c.font='600 34px Figtree,system-ui,sans-serif';
+    c.fillText('Rajeev Plaza, Gwalior',58,940);
+    c.fillStyle='#E3172F';c.beginPath();
+    if(c.roundRect){c.roundRect(54,1010,330,76,38)}else{c.rect(54,1010,330,76)}
+    c.fill();
+    c.fillStyle='#fff';c.font='600 32px Figtree,system-ui,sans-serif';
+    c.fillText('Closes at 9 PM',92,1060);
+    tex.needsUpdate=true;
+  }
+  drawScreen();
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(drawScreen);
+  var sg=new THREE.ShapeGeometry(rr(1.5,3.2,.2),16),p=sg.attributes.position,uv=sg.attributes.uv;
+  for(var i=0;i<p.count;i++)uv.setXY(i,(p.getX(i)+.75)/1.5,(p.getY(i)+1.6)/3.2);
+  var screen=new THREE.Mesh(sg,new THREE.MeshBasicMaterial({map:tex}));
+  screen.position.z=.102;phone.add(screen);
+
+  // Camera bump on the back
+  var dark=new THREE.MeshStandardMaterial({color:0x17181c,metalness:.7,roughness:.35});
+  var plate=new THREE.Mesh(new THREE.ExtrudeGeometry(rr(.76,.76,.2),{depth:.05,bevelEnabled:false}),dark);
+  plate.rotation.y=Math.PI;plate.position.set(.38,1.1,-.1);phone.add(plate);
+  [[.2,.2],[.2,-.2]].forEach(function(o){
+    var l=new THREE.Mesh(new THREE.CylinderGeometry(.14,.14,.05,32),new THREE.MeshStandardMaterial({color:0x2b2d33,metalness:.9,roughness:.2}));
+    l.rotation.x=Math.PI/2;l.position.set(.38+o[0]*-1,1.1+o[1],-.175);phone.add(l);
+    var g=new THREE.Mesh(new THREE.CylinderGeometry(.08,.08,.06,24),new THREE.MeshStandardMaterial({color:0x7a808f,metalness:.3,roughness:.05}));
+    g.rotation.x=Math.PI/2;g.position.set(.38+o[0]*-1,1.1+o[1],-.185);phone.add(g);
+  });
+
+  // Orbiting accessories
+  var white=new THREE.MeshStandardMaterial({color:0xf4f6ff,roughness:.4});
+  var sunM=new THREE.MeshStandardMaterial({color:0xE3172F,roughness:.35,metalness:.2});
+  var sats=[];
+  function sat(m,rx,y,sp,ph){scene.add(m);sats.push({m:m,rx:rx,y:y,sp:sp,ph:ph})}
+  var ch=new THREE.Group();
+  ch.add(new THREE.Mesh(new THREE.BoxGeometry(.55,.55,.3),white));
+  [-.12,.12].forEach(function(x){var pr=new THREE.Mesh(new THREE.BoxGeometry(.06,.2,.04),sunM);pr.position.set(x,.37,0);ch.add(pr)});
+  sat(ch,1.9,.9,.5,0);
+  var bank=new THREE.Mesh(new THREE.CylinderGeometry(.2,.2,.7,28),new THREE.MeshStandardMaterial({color:0x1c1d22,metalness:.6,roughness:.3}));
+  sat(bank,2.1,-.9,.4,2);
+  var ring=new THREE.Mesh(new THREE.TorusGeometry(.3,.09,16,40),sunM);
+  sat(ring,1.8,-1.4,.6,4);
+  var bud=new THREE.Mesh(new THREE.SphereGeometry(.2,24,24),white);
+  sat(bud,2,1.5,.7,1);
+
+  // Colour picker
+  var picker=document.getElementById('picker'),target=new THREE.Color(swatches[0][1]);
+  swatches.forEach(function(s,i){
+    var b=document.createElement('button');b.className='sw';b.type='button';
+    b.style.background='#'+('000000'+s[1].toString(16)).slice(-6);
+    b.setAttribute('aria-label',s[0]);b.setAttribute('aria-pressed',i===0);
+    b.onclick=function(){target.set(s[1]);picker.querySelectorAll('.sw').forEach(function(x){x.setAttribute('aria-pressed',x===b)})};
+    picker.appendChild(b);
+  });
+
+  // Interaction
+  var px=0,py=0,drag=0,vel=0,down=false,lx=0,t=0,vis=true,TAU=Math.PI*2;
+  stage.addEventListener('pointermove',function(e){
+    var r=stage.getBoundingClientRect();px=((e.clientX-r.left)/r.width-.5)*2;py=((e.clientY-r.top)/r.height-.5)*2;
+    if(down){vel=(e.clientX-lx)*.012;drag+=vel;lx=e.clientX}
+  });
+  cv.addEventListener('pointerdown',function(e){down=true;lx=e.clientX;try{cv.setPointerCapture(e.pointerId)}catch(_){}});
+  function up(){down=false}
+  cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',up);
+  stage.addEventListener('pointerleave',function(){px=0;py=0});
+  cv.addEventListener('keydown',function(){});
+
+  function size(){
+    var w=stage.clientWidth,h=stage.clientHeight;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+    renderer.setSize(w,h,false);cam.aspect=w/h;
+    cam.position.set(0,0,cam.aspect<1?6.6/cam.aspect*.85:6.6);cam.updateProjectionMatrix();
+  }
+  size();
+  if(window.ResizeObserver)new ResizeObserver(size).observe(stage);else window.addEventListener('resize',size);
+  if(window.IntersectionObserver)new IntersectionObserver(function(en){vis=en[0].isIntersecting}).observe(stage);
+
+  function frame(){
+    requestAnimationFrame(frame);
+    if(!vis)return;
+    if(!reduce)t+=.016;
+    if(!down){drag+=vel;vel*=.94;drag+=(Math.round(drag/TAU)*TAU-drag)*.03}
+    var sway=reduce?.25:Math.sin(t*.6)*.4+.2;
+    phone.rotation.y+=((sway+drag+px*.35)-phone.rotation.y)*.12;
+    phone.rotation.x+=((py*.18)-phone.rotation.x)*.1;
+    phone.position.y=reduce?0:Math.sin(t*1.1)*.08;
+    bodyMat.color.lerp(target,.1);
+    sats.forEach(function(s){
+      var a=t*s.sp+s.ph;
+      s.m.position.set(Math.cos(a)*s.rx,s.y+(reduce?0:Math.sin(a*1.7)*.12),Math.sin(a)*1.1-.2);
+      s.m.rotation.x=a*.6;s.m.rotation.y=a*.8;
+    });
+    renderer.render(scene,cam);
+  }
+  frame();
+})();
+</script>
+</body>
+</html>
